@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Project-2: Flight Price Prediction | Manoj</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="A tool that Predict Flight Price">
+    <meta name="generator" content="Hugo 0.84.1" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+<link rel="stylesheet" href="https://manojkumal.github.io/Portfolio/ananke/css/main.min.css" >
+
+
+
+
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="Project-2: Flight Price Prediction" />
+<meta property="og:description" content="A tool that Predict Flight Price" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://manojkumal.github.io/Portfolio/post/project-2/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2020-07-12T11:14:48-04:00" />
+<meta property="article:modified_time" content="2020-07-12T11:14:48-04:00" /><meta property="og:site_name" content="Manoj" />
+
+<meta itemprop="name" content="Project-2: Flight Price Prediction">
+<meta itemprop="description" content="A tool that Predict Flight Price"><meta itemprop="datePublished" content="2020-07-12T11:14:48-04:00" />
+<meta itemprop="dateModified" content="2020-07-12T11:14:48-04:00" />
+<meta itemprop="wordCount" content="3585">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Project-2: Flight Price Prediction"/>
+<meta name="twitter:description" content="A tool that Predict Flight Price"/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  
+  
+  <header class="cover bg-top" style="background-image: url('https://manojkumal.github.io/Portfolio/images/t.jpg');">
+    <div class="pb3-m pb6-l bg-black-60">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://manojkumal.github.io/Portfolio/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Manoj
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://manojkumal.github.io/Portfolio/about/" title="About page">
+              About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://manojkumal.github.io/Portfolio/contact/" title="Contact page">
+              Contact
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://manojkumal.github.io/Portfolio/post/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+
+
+
+
+<a href="https://twitter.com/GoHugoIO" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">Project-2: Flight Price Prediction</h1>
+          
+            <h2 class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
+              A tool that Predict Flight Price
+            </h2>
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        PROJECTS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=https://manojkumal.github.io/Portfolio/post/project-2/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=https://manojkumal.github.io/Portfolio/post/project-2/&amp;text=Project-2:%20Flight%20Price%20Prediction" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://manojkumal.github.io/Portfolio/post/project-2/&amp;title=Project-2:%20Flight%20Price%20Prediction" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Project-2: Flight Price Prediction</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2020-07-12T11:14:48-04:00">July 12, 2020</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h1 id="introduction">Introduction</h1>
+<p>With the development of transportations industry and everyone has limited time for travelling, the airplane become more popular way of travelling. The advent of internet everywhere, people can easily check, book and buy air ticket any time with the help of internet. Airlines frequently changes prices of flights to maximize profit and fill more seats.  Based on the demand for specific route and travel date, flight distances, service categories, airline may increase or decrease the price of ticket. Generally, costumers want to busy ticket at lowest possible price. However, they are still confuse when to buy ticket or not. Especially those people who are not frequently travel in airplane. To overcome this problem, we are used machine learning model to predict flight price accurately. This would be very useful application for us, which can help passengers to make appropriate purchase decision and save their expense.</p>
+<h1 id="table-of-contents">Table of Contents</h1>
+<ol>
+<li>Data Gathering</li>
+<li>Exploratory Data Analysis</li>
+<li>Feature Engineering</li>
+<li>Feature Selection</li>
+<li>Model Creation</li>
+<li>Model Evaluation</li>
+<li>Conclusion</li>
+</ol>
+<h1 id="data-gathering">Data Gathering</h1>
+<p>Data is the very essential for any kind of data science projects. First of all, we have to collect data regarding our domain. This data collection exercise often requires domain expert. With the help of domain expert we could collect more accurate data. If we have good dataset then machine learning model can learn more accurately and make better prediction. So, more accurate data is required according to our problem statement. The model performance is depends on how the good data will we provide to our model. To do this project I had take data from kaggle.com. The dataset is look like this below.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">train_data = pd.read_excel(&#34;Data_Train.xlsx&#34;)
+pd.set_option(&#39;display.max_columns&#39;,None)
+train_data.head()
+</code></pre></div><figure><img src="https://manojkumal.github.io/Portfolio/images/Screenshot%20%28340%29.png"/>
+</figure>
+
+<h1 id="exploratory-data-analysis">Exploratory Data Analysis</h1>
+<p>It is a way of visualizing, summarizing and interpreting the information that is hidden in rows and column format. We need understand the various aspects of data and what lies inside our data. Understanding about features/attributes like how many number of numerical features, categorical features and how they are represent etc. First, We will look at the features of our dataset.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">train_data.columns
+</code></pre></div><p><figure><img src="https://manojkumal.github.io/Portfolio/images/Screenshot%20%28286%29.png"/>
+</figure>
+
+We have 10 independent features and 1 dependent feature i.e Price is our target variable in dataset. The features are self explanatory.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">train_data.datatypes
+</code></pre></div><p><figure><img src="https://manojkumal.github.io/Portfolio/images/Screenshot%20%28287%29.png"/>
+</figure>
+
+we can see that their is only two datatypes. They are int64 and object.</p>
+<ul>
+<li>int64: It represents the integer feature in dataset.</li>
+<li>object: It represents the feature having multiple datatypes including string.</li>
+</ul>
+<p>Most of the features are object. which is treated as categorical because it contain string and mathematical notation. The feature Additional Info is unnecessary column because it contain almost 80% of no information and it couldn&rsquo;t help us to making our conclusion so we can remove this.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">train_data.drop([&#39;Additiona_Info&#39;],axis=1,inplace=True)
+train_data.head()
+</code></pre></div><figure><img src="https://manojkumal.github.io/Portfolio/images/Screenshot%20%28347%29.png"/>
+</figure>
+
+<p>In EDA, we are used different statistical tools for visualizing the data, which help us to reveal hidden information and maximize insight into dataset. We can find the outlier and the relation between independent feature and dependent feature in data. Now, we can see the relation between Airline and price using cat plot.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"># Airline vs Price
+sns.catplot(y = &#34;Price&#34;, x = &#34;Airline&#34;, data = train_data.sort_values(
+&#34;Price&#34;, ascending = False), kind=&#34;boxen&#34;, height = 6, aspect = 3)
+plt.show()
+</code></pre></div><figure><img src="https://manojkumal.github.io/Portfolio/images/Screenshot%20%28302%29.png"/>
+</figure>
+
+<p>we can easily see the relation between Airline and price. Jet Airways Business have highest price that means it has more impact on price. Jet Airways also have highest price after Jet Airways Business that means it has more impact on price but less impact than Jet Airways Business. Trujet have lowest price so it has less impact on price. The relation between Price and Source using catplot.</p>
+<pre><code class="language-hmtml" data-lang="hmtml"># Price vs Source
+sns.catplot(y = &quot;Price&quot;, x = &quot;Source&quot;,data= train_data.sort_values(
+  &quot;Price&quot;, ascending=False), kind = &quot;boxen&quot;, height = 4, aspect = 3)
+plt.show()
+</code></pre><p><figure><img src="https://manojkumal.github.io/Portfolio/images/Screenshot%20%28299%29.png"/>
+</figure>
+
+The Source from banglore have highest price and it has more significant impact on price and source from chennai have less prices so it has less significant impact on price.</p>
+<h1 id="feature-engineering">Feature Engineering</h1>
+<p>These are the list of feature engineering techniques.</p>
+<ol>
+<li>Handling Missing values</li>
+<li>Handling Outliers</li>
+<li>Log Transform</li>
+<li>Extracting Date</li>
+<li>One hot Encoding</li>
+<li>Feature scaling</li>
+<li>Splitting the data for train and test</li>
+</ol>
+<h1 id="handling-missing-values">Handling Missing values</h1>
+<p>Missing values are one of the most common problem we can face when we are try to prepare our data for machine learning. The reason for the missing values might be human errors, interruptions in the data flow, privacy concerns, and so on. Whatever is the reason, missing values affect the performance of the machine learning models. The most simple solution for missing value is drop the entire rows and columns but it is not good solution because loss of information and data. We have to Works poorly if the percentage of missing values is high (say 70%), compared to the whole dataset then we can remove it.  We can also use mean, median and mode to replace missing values.</p>
+<pre><code class="language-hmtl" data-lang="hmtl">#looking for Null Values
+train_data.isnull().sum()
+</code></pre><figure><img src="https://manojkumal.github.io/Portfolio/images/Screenshot%20%28304%29.png"/>
+</figure>
+
+<h1 id="handling-outliers">Handling Outliers</h1>
+<p>We can detect outlier with the help of mathematical method by using percentiles. We need to assume certain percent of the value from top or bottom as a outlier. Additionally, one common mistake while using percentiles top 5% is not the values between 96 and 100. Top 5% means here the values that are out of the 95th percentile of data. Another option for handling outliers is to cap them instead of dropping. So you can keep your data size and at the end of the day, it might be better for the final model performance.</p>
+<h1 id="log-transform">Log Transform</h1>
+<p>Logarithm transformation is one of the most commonly used mathematical transformations in feature engineering. There are some benefits of log transform. It helps to handle skewed (left skew and right skew) data and after transformation, the distribution becomes more approximate to normal distribution/Gaussian distribution.It also decreases the effect of the outliers, due to the normalization of magnitude differences and the model become more robust.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">import scipy.stats as stats
+def diagnostic_plot(train_data, variable):
+# funtion to plot histogram and Q-Q plot
+# side by side, for certain variable
+    plt.figure(figsize=(16,9))
+    plt.subplot(1,2,1)
+    train_data[variable].hist()
+
+    plt.subplot(1,2,2)
+    stats.probplot(train_data[variable],dist=&#39;norm&#39;,plot=plt)
+    plt.show()
+
+    train_data[&#39;Log_Price&#39;] = np.log(train_data[&#39;price&#39;]+1)
+    diagnostic_plot(train_data, &#39;Log_Price&#39;)
+</code></pre></div><figure><img src="https://manojkumal.github.io/Portfolio/images/Screenshot%20%28407%29.png"/>
+</figure>
+
+<h1 id="extracting-date">Extracting Date</h1>
+<p>Date columns usually provide very useful information about the model target. However, dates can be present in numerous formats, which make it hard to understand by algorithms, even they are simplified to a format like &ldquo;24/03/2019&rdquo;.so, we have to use different type of preprocessing for dates.</p>
+<ul>
+<li>Extracting the parts of the date into different columns: Year, month, day, etc.</li>
+<li>Extracting the time period between the current date and columns in terms of years, months, days, etc.</li>
+<li>Extracting some specific features from the date: Name of the weekday, Weekend or not, holiday or not, etc.</li>
+</ul>
+<p>Date_of_Journey:</p>
+<p>In the column ‘Date_of_Journey’, we can see the date format is given as dd/mm/yyyy and as you can see the datatype is given as object So there is two ways to tackle this column, either convert the column into Timestamp or divide the column into date, Month ,Year. Here , i am splitting the columns.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">train_data[&#39;Journey_day&#39;] = pd.to_datetime(train_data[&#39;Date_of_Journey&#39;], format = &#39;%d/%m/%Y&#39;).dt.day
+train_data[&#39;Journey_month&#39;] = pd.to_datetime(train_data[&#39;Date_of_Journey&#39;], format = &#39;%d/%m/%Y&#39;).dt.month
+train_data.drop([&#39;Date_of_Journey&#39;],axis=1,inplace=True)
+</code></pre></div><figure><img src="https://manojkumal.github.io/Portfolio/images/Screenshot%20%28316%29.png"/>
+</figure>
+
+<p>Arrival_Time:</p>
+<p>In the column ‘Arrival_Time’, if we see we have combination of both time and month but we need only the time details out of it so we split the time into ‘Hours’ and ‘Minute’.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"># Arrival time is when the plane pulls up to the gate.
+# Similar to Date_of_Journey we can extract values from Arrival_Time
+train_data[&#39;Arrival_hour&#39;] = pd.to_datetime(train_data[&#39;Arrival_Time&#39;]).dt.hour
+train_data[&#39;Arrival_minute&#39;] = pd.to_datetime(train_data[&#39;Arrival_Time&#39;]).dt.minute
+train_data.drop([&#39;Arrival_Time&#39;],axis=1,inplace=True)
+</code></pre></div><figure><img src="https://manojkumal.github.io/Portfolio/images/Screenshot%20%28318%29.png"/>
+</figure>
+
+<p>Dep_Time:</p>
+<p>As same as ‘Arrival_time’ .we split this column also in hour and minute.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">
+# Departure time is when a plane leaves the gate.
+# Similar to Date_of_Journey we can extract values from Dep_Time
+train_data[&#39;Dep_hour&#39;] = pd.to_datetime(train_data[&#39;Dep_Time&#39;]).dt.hour
+train_data[&#39;Dep_min&#39;] = pd.to_datetime(train_data[&#39;Dep_Time&#39;]).dt.minute
+</code></pre></div><figure><img src="https://manojkumal.github.io/Portfolio/images/Screenshot%20%28319%29.png"/>
+</figure>
+
+<h1 id="dummy-variable-encoding">Dummy Variable Encoding</h1>
+<p>In our dataset, there may be some categorical features that don’t understand by computer so we have to convert those categorical features into numerical feature. Categorical features contain string data type. There are two types of categorical feature in our dataset namely ordinal and nominal. Nominal data are those data which don’t have priority ordering and Ordinal data are those data that has priority ordering with each variable. There are many ways to handle categorical features. In this case, we use dummy variable encoding. Dummy variable encoding represents n categories with n-1 binary value. First of all, we are going convert nominal data types. There are three categorical features in our dataset, which are nominal data types. i.e Airline, Source, Destination.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">## As Airline is Nominal Categorical data we will perform OneHotEncoding
+Airline = train_data[&#39;Airline&#39;]
+Airline = pd.get_dummies(Airline, drop_first=True)
+Airline.head()
+</code></pre></div><figure><img src="https://manojkumal.github.io/Portfolio/images/Screenshot%20%28351%29.png"/>
+</figure>
+
+<p>For each level of a categorical feature, we create a new variable. Each category is mapped with a binary variable containing The problem with the one hot encoding technique is that it creates redundancy because it. The problem with the one hot encoding technique is that it creates redundancy because it creates an additional feature based on categories in the feature. Tree based models doesn’t perform well with one hot encoding if there are too many unique value in feature. This is because they pick the subset of feature while splitting the data. If we have a lot of unique value, then the chosen features will be mostly zero which doesn’t produce significant result. So we don’t perform one hot encoding while training tree based models. Linear models don’t suffer from this problem.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">Source = train_data[&#39;Source&#39;]
+Source = pd.get_dummies(Source, drop_first=True)
+Source.head()
+</code></pre></div><figure><img src="https://manojkumal.github.io/Portfolio/images/Screenshot%20%28325%29.png"/>
+</figure>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">Destination = train_data[&#39;Destination&#39;]
+Destination = pd.get_dummies(Destination, drop_first=True)
+Destination.head()
+</code></pre></div><figure><img src="https://manojkumal.github.io/Portfolio/images/Screenshot%20%28326%29.png"/>
+</figure>
+
+<p>Ordinal data are those data that has priority ordering with each variable. An ordinal encoding involves mapping each unique label to an integer value. This type of encoding is really only appropriate if there is a known relationship between the categories. In Label encoding, each label (category) is converted into an integer value. Total_stops is ordinal variable. The route and total step are related. The ‘Route’ columns mainly tell us that how many cities they had taken to reach from source to destination .This column is very important because based on the route they took will directly effect on the price of the flight.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"># As this is case of Ordinal Categorical type we perform LabelEncoder
+# Here Values are assigned with corresponding keys
+
+train_data.replace({&#39;non-stop&#39;:0, &#39;1 stop&#39;: 1, &#39;2 stops&#39;:2, &#39;3 stops&#39;: 3, &#39;4 stops&#39;: 4}, inplace=True)
+train_data.head()
+</code></pre></div><figure><img src="https://manojkumal.github.io/Portfolio/images/Screenshot%20%28354%29.png"/>
+</figure>
+
+<h1 id="feature-scaling">Feature Scaling</h1>
+<p>In most cases, the numerical features of the dataset do not have same range and they differ from each other. So, we need to scale our feature. This process is not mandatory for many algorithms like tree base algorithms, but it might be still nice to apply. However, the algorithms based on distance calculations such as k-NN or K-means, need to have scaled continuous features as model input.</p>
+<ul>
+<li>
+<p>Standardization
+If the standard deviation of features is different, their range also would differ from each other. This reduces the effect of the outliers in the features. In the following formula of standardization, the mean is shown as μ and the standard deviation is shown as σ. z = (x-μ)/σ</p>
+</li>
+<li>
+<p>Normalization
+Normalization (or min-max scaler) scales all values in a fixed range between 0 and 1. This transformation does not change the distribution of the feature and due to the decreased standard deviations, the effects of the outliers increases. Therefore, before normalization, it is recommended to handle the outliers. Xnorm = (X-Xmin)/(Xmax-Xmin).</p>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">from sklearn.preprocessing import RobustScaler
+sc = RobustScaler()
+X_train_sc = sc.fit_transform(X_train)
+X_test_sc = sc.transform(X_test)
+</code></pre></div><h1 id="splitting-the-data">Splitting the data</h1>
+<p>The fundamental goal of an ML model is to make accurate predictions on future data instances beyond those used to train models. Before using an ML model to make predictions, we need to evaluate the predictive performance of the model. To estimate the quality of an ML models predictions with data it has not seen, so we have to split our data into training and testing data. This allows us to evaluate our model on unseen data.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(
+X, y, test_size = 0.2, random_state = 42)
+</code></pre></div><h1 id="feature-selection">Feature Selection</h1>
+<p>Feature Selection is the process to automatically select those features which contribute most to our model. Having irrelevant features in our data don’t increase the accuracy of our model. We want to remove those features which doesn’t have significant effect. We can use seaborn library to plot heat map of study the correlation between features.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"># Finds correlation between Independent and dependent attributes
+plt.figure(figsize = (18,18))
+sns.heatmap(train_data.corr(), annot = True, cmap = &#34;RdYlGn&#34;)
+plt.show()
+</code></pre></div><figure><img src="https://manojkumal.github.io/Portfolio/images/Screenshot%20%28329%29.png"/>
+</figure>
+
+<p>We see our most of the features are not highly correlated with each others. Two features Number of Total_stops and Price are correlated with each other. Also, The total stops and Duration is highly correlated. Instead, if two features are perfectly correlated, then one doesn’t add any additional information. So removing either of the features don’t affect the accuracy of model. Now, we are using Extra Tree Regressor for feature selection and these are the top 10 important features from dataset.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"># Important feature using ExtraTreesRegressor
+
+from sklearn.ensemble import ExtraTreesRegressor
+selection = ExtraTreesRegressor()
+selection.fit(X, y)
+print(selection.feature_importances_)
+
+feat_importances = pd.Series(selection.feature_importances_, index=X.columns)
+feat_importances.nlargest(10).plot(kind=&#39;barh&#39;)
+plt.show()
+</code></pre></div><figure><img src="https://manojkumal.github.io/Portfolio/images/Screenshot%20%28332%29.png"/>
+</figure>
+
+<p>Total steps is one of the most important feature and which highly correlated with the Price.</p>
+<h1 id="model-creation">Model Creation</h1>
+<p>Choosing the right algorithm is also a important phase of data science project. Since our project is a regression problem we can choose variety of regression algorithm to make prediction. Some of the algorithms we have used are listed below:</p>
+<ol>
+<li>Linear regression</li>
+<li>K Nearest neighbors</li>
+<li>Random Forest</li>
+<li>Decision tree</li>
+<li>Xg boost regressor</li>
+</ol>
+<h1 id="linear-regression">Linear regression</h1>
+<p>Linear Regression is the machine learning algorithm based on supervised learning.  Regression models a target prediction value based on independent variables.  It is mostly used for find out the relationship between variables and forecasting.  Different regression models differ based on kind of relationship between dependent and independent variables. Linear Regression performs task to predict the dependent variable value (y) based on a given independent variables(x).So, this regression technique finds out a linear relationship between x (input) and y (output). Hence, the name is Linear Regression.</p>
+<figure><img src="https://manojkumal.github.io/Portfolio/images/Screenshot%20%28358%29.png"/>
+</figure>
+
+<p>In the figure above, X (input) is the work experience and Y (output) is the salary of a person. The straight line in the diagram is the best fit line. The main goal of the simple linear regression is to consider the given data points and plot the best fit line to fit the model in the best way possible.</p>
+<h1 id="k-nearest-neighbors">K Nearest neighbors</h1>
+<p>The KNN algorithm is simple, easy to implement supervised machine learning algorithm that can be used to both classification and regression problems. KNN is also a non-parametric learning algorithm because it doesn’t have any assumption about the data. The KNN algorithm uses the feature similarity to predict the value of any new data points.  It computes the distance between the new data points and every training data points using Euclidean distance. Then, select the k closest instances and their labels/class. In output, those label is most frequently occur and the new data point will be belong into that class. Below is the figure how KNN algorithm works.</p>
+<p>The KNN takes less amount of time while training and training time is constant. It takes more amount of time while testing. However, testing time is depends on the amount of dataset.  This algorithm can be computationally expensive because we need to store all training example and compute distance to all training example for a single prediction.</p>
+<h1 id="random-forest">Random Forest</h1>
+<p>Random Forest is the ensemble learning method which is used for both classification as well as regression. It is the one of the most used algorithm because of high accuracy.  The main idea of random forest is it builds the multiple decision trees and merges them together to get more accurate and better prediction. First of all, random forest selects the samples randomly from a given dataset. Next, this algorithm will construct the decision tree for every sample. Then, it will get the result from every decision tree. Now, voting will be performed for every predicted result. At last, select the most voted prediction result as the final prediction result.</p>
+<figure><img src="https://manojkumal.github.io/Portfolio/images/Screenshot%20%28374%29.png"/>
+</figure>
+
+<p>In Decision Tree, the over-fitting is main problem which is solved by using random forest. Instead of single decision tree, it creates multiple trees and it reduces the over-fitting by averaging/combining the result.It also work well with large amount of dataset but the complexity is very high. More computational resources are required to implement Random Forest algorithm.</p>
+<h1 id="decision-tree">Decision Tree</h1>
+<p>Decision Trees are non-parametric supervised learning method used for both classification and regression. Decision Tree builds classification and regression models in the form of tree structure. Decision tree handle the both categorical and numerical data. It iteratively divides attributes into two groups which are the most dominant attribute and others to construct a tree. Then, it calculates the entropy and information gain of each attribute. In this way, the most dominant attribute can be found. After then, the most dominant one is put on tree as decision tree (root node). Entropy and gain score would be again calculated among the other attributes. This procedure will continue until a reaching for that branch.</p>
+<figure><img src="https://manojkumal.github.io/Portfolio/images/Screenshot%20%28376%29.png"/>
+</figure>
+
+<p>Decision Tree is look like a simple if else statement. It can handle non linear parameter efficiently and it has so many benefits. However, the main problem with Decision tree is over-fitting because it creates tree completely to the depth. It doesn&rsquo;t work well with the large amount of dataset.</p>
+<h1 id="xg-boost-regressor">Xg boost regressor</h1>
+<p>XGBoost is a supervised machine learning algorithm that stands for Extreme Gradient Boosting. It is used for both classification and regression problems. It uses the binary tree while constructing the tree and it is highly efficient algorithm. XGBoost is one of the popular algorithms for competition because of its performance. It used the boosting technique which helps to reduce the error made by previous models by adding some weights to the models. It supports the parallel processing and can be run on both single and distributed system like Spark and Hadoop. Its working mechanism is similar like a gradient boosting. The base algorithm reads the data and assigns equal weight to each sample observation.  False predictions are assigned to the next base learner with a higher weightage on these incorrect predictions. Repeat unless and until the algorithm can correctly classify the output.</p>
+<h1 id="model-evaluation">Model Evaluation</h1>
+<p>Here are three common evaluation metrics for regression problems:</p>
+<p>Mean Absolute Error (MAE) is the mean of the absolute value of the errors: In equation form, it looks like this
+<figure><img src="https://manojkumal.github.io/Portfolio/images/Screenshot%20%28377%29.png"/>
+</figure>
+
+Mean Squared Error (MSE) is the mean of the squared errors:. In equation form, it looks like this:
+<figure><img src="https://manojkumal.github.io/Portfolio/images/Screenshot%20%28378%29.png"/>
+</figure>
+
+Root Mean Squared Error (RMSE) is the square root of the mean of the squared errors:
+<figure><img src="https://manojkumal.github.io/Portfolio/images/Screenshot%20%28379%29.png"/>
+</figure>
+</p>
+<p>comparing these metrics:</p>
+<ul>
+<li>MAE is the easiest to understand, because it&rsquo;s the average error.</li>
+<li>MSE is more popular than MAE, because MSE &ldquo;punishes&rdquo; larger errors, which tends to be useful in the real world.</li>
+<li>RMSE is even more popular than MSE, because RMSE is interpretable in the &ldquo;y&rdquo; units.
+All of these are loss functions, because we want to minimize them.</li>
+</ul>
+<p>R-Squared</p>
+<p>R-Squared is the statistical measure of how close the data are to the fitted regression line. It is also known as the coefficient of determination or coefficient of multiple determination for multiple regression. R-squared comes with an inherent problem – additional input variables will make the R-squared stay the same or increase (this is due to how the R-squared is calculated mathematically). Therefore, even if the additional input variables show no relationship with the output variables, the R-squared will increase.</p>
+<p>Adjusted R-squared
+R-squared measures the proportion of the variation in your dependent variable (Y) explained by your independent variables (X) for a linear regression model. Adjusted R-squared adjusts the statistic based on the number of independent variables in the model.R2 shows how well terms (data points) fit a curve or line. Adjusted R2 also indicates how well terms fit a curve or line, but adjusts for the number of terms in a model. If you add more and more useless variables to a model, adjusted r-squared will decrease. If you add more useful variables, adjusted r-squared will increase.
+<figure><img src="https://manojkumal.github.io/Portfolio/images/Screenshot%20%28381%29.png"/>
+</figure>
+</p>
+<p>Evaluation Metrics for Linear Regression</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">from sklearn import metrics
+print(&#34;MAE&#34;, metrics.mean_absolute_error(y_test,y_pred))
+print(&#34;MSE&#34;, metrics.mean_squared_error(y_test,y_pred))
+print(&#34;RMSE&#34;, np.sqrt(metrics.mean_squared_error(y_test,y_pred)))
+</code></pre></div><figure><img src="https://manojkumal.github.io/Portfolio/images/Screenshot%20%2850%29.png"/>
+</figure>
+
+<p>The R-Squared Score is 62%</p>
+<p>Evaluation metrics for KNeighborsRegressor</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">from sklearn import metrics
+print(&#34;MAE&#34;, metrics.mean_absolute_error(y_test,y_pred))
+print(&#34;MSE&#34;, metrics.mean_squared_error(y_test,y_pred))
+print(&#34;RMSE&#34;, np.sqrt(metrics.mean_squared_error(y_test,y_pred)))
+</code></pre></div><figure><img src="https://manojkumal.github.io/Portfolio/images/Screenshot%20%2851%29.png"/>
+</figure>
+
+<p>The R-Squared Score is 47%</p>
+<p>Evaluation metrics for Random Forest regressor</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">from sklearn import metrics
+print(&#34;MAE&#34;, metrics.mean_absolute_error(y_test,y_pred))
+print(&#34;MSE&#34;, metrics.mean_squared_error(y_test,y_pred))
+print(&#34;RMSE&#34;, np.sqrt(metrics.mean_squared_error(y_test,y_pred)))
+</code></pre></div><figure><img src="https://manojkumal.github.io/Portfolio/images/Screenshot%20%2852%29.png"/>
+</figure>
+
+<p>The R-Squared Score is 81%</p>
+<p>Evaluation metrics for Decision Tree regressor</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">from sklearn import metrics
+print(&#34;MAE&#34;, metrics.mean_absolute_error(y_test,y_pred))
+print(&#34;MSE&#34;, metrics.mean_squared_error(y_test,y_pred))
+print(&#34;RMSE&#34;, np.sqrt(metrics.mean_squared_error(y_test,y_pred)))
+</code></pre></div><figure><img src="https://manojkumal.github.io/Portfolio/images/Screenshot%20%2853%29.png"/>
+</figure>
+
+<p>The R-Squared Score is 74%</p>
+<p>Evaluation metrics for Xgboost regressor</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">from sklearn import metrics
+print(&#34;MAE&#34;, metrics.mean_absolute_error(y_test,y_pred))
+print(&#34;MSE&#34;, metrics.mean_squared_error(y_test,y_pred))
+print(&#34;RMSE&#34;, np.sqrt(metrics.mean_squared_error(y_test,y_pred)))
+</code></pre></div><figure><img src="https://manojkumal.github.io/Portfolio/images/Screenshot%20%2854%29.png"/>
+</figure>
+
+<p>The R-Squared Score is 84%</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>In this article, a Machine Learning model is developed to predict the airlines fare. In this type of problem Feature Engineering is the most crucial think . You can see how we have handled the categorical and numerical data and also how we build different ML model on the same dataset . We also check the RMSE score of each model so that we can understand how it should perform in our test dataset. With the help of the above techniques, proposed model is able to predict the flight fare with R squared score of 84.59%. However, there is still ways to do improvement in this model.
+In the future, our model can be predict the flight fare more accurately, if we get some of information such as seat location, when ticket was booked, special occasion on departure date etc.</p>
+<h1 id="links">Links</h1>
+<p>The code for the project can be found <a href="https://github.com/Manojkumal/Flight-Fare-Prediction">Here</a></p>
+<p>The original dataset can be found <a href="https://www.kaggle.com/nikhilmittal/flight-fare-prediction-mh">Here</a></p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://manojkumal.github.io/Portfolio/" >
+    &copy;  Manoj 2021 
+  </a>
+    <div>
+
+
+
+
+<a href="https://twitter.com/GoHugoIO" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Manoj</title>
+    <link>https://manojkumal.github.io/Portfolio/post/</link>
+    <description>Recent content in Projects on Manoj</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 02 Mar 2020 12:00:00 -0500</lastBuildDate><atom:link href="https://manojkumal.github.io/Portfolio/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project-2: Flight Price Prediction</title>
+      <link>https://manojkumal.github.io/Portfolio/post/project-2/</link>
+      <pubDate>Sun, 12 Jul 2020 11:14:48 -0400</pubDate>
+      
+      <guid>https://manojkumal.github.io/Portfolio/post/project-2/</guid>
+      <description>Introduction With the development of transportations industry and everyone has limited time for travelling, the airplane become more popular way of travelling. The advent of internet everywhere, people can easily check, book and buy air ticket any time with the help of internet. Airlines frequently changes prices of flights to maximize profit and fill more seats. Based on the demand for specific route and travel date, flight distances, service categories, airline may increase or decrease the price of ticket.</description>
+    </item>
+    
+    <item>
+      <title>Project-1: Bank Loan Prediction</title>
+      <link>https://manojkumal.github.io/Portfolio/post/project-1/</link>
+      <pubDate>Thu, 09 Apr 2020 10:58:08 -0400</pubDate>
+      
+      <guid>https://manojkumal.github.io/Portfolio/post/project-1/</guid>
+      <description>Introduction A bank loan is when a bank offer to lend money to customers for a certain time period. As a condition of the bank, the borrower will need to pay a certain amount of interest per month, or per year. The bank will provide a loan for different purpose like business loan, home loan, education loan etc. One of the most challenging parts of a bank is whether the customers will pay back with interest or not because most of the bank comes for a interest.</description>
+    </item>
+    
+  </channel>
+</rss>
